@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flying Lessons & Trial Flights | Isle of Flight | Isle of Wight</title>
+  <meta name="description" content="Flying lessons and trial flights on the Isle of Wight. Fly the Needles, round the island, or learn to fly at Sandown Airport with Isle of Flight.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Isle of Flight",
+    "description": "Flying lessons and trial flights on the Isle of Wight",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sandown",
+      "addressRegion": "Isle of Wight",
+      "addressCountry": "GB"
+    },
+    "url": "https://isleofflight.co.uk"
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- Navigation -->
+  <header class="border-b border-gray-100 bg-white/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="relative inline-block w-8 h-8">
+          <span class="absolute inset-0 rounded-full border-[6px] border-[#213a75]"></span>
+          <span class="absolute inset-0 flex items-center justify-center">
+            <span class="w-[10px] h-[8.5px] bg-red-600 rotate-45 rounded-sm"></span>
+          </span>
+        </span>
+        <span class="text-lg font-semibold tracking-tight" style="font-family: 'Poppins', sans-serif;">Isle of Flight</span>
+      </a>
+      <!-- Desktop menu -->
+      <nav class="hidden sm:flex gap-8 text-base font-medium text-gray-700">
+        <a href="index.html" class="hover:text-[#213a75]">Home</a>
+        <a href="experiences.html" class="hover:text-[#213a75]">Experiences</a>
+        <a href="courses.html" class="hover:text-[#213a75]">Lessons</a>
+        <a href="about.html" class="hover:text-[#213a75]">About</a>
+        <a href="contact.html" class="hover:text-[#213a75]">Contact</a>
+      </nav>
+      <!-- Hamburger -->
+      <button id="menu-btn" class="sm:hidden text-gray-700" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="hidden sm:hidden border-t border-gray-100 bg-white">
+      <div class="px-6 py-6 flex flex-col gap-6 text-lg font-medium text-gray-700">
+        <a href="index.html" class="hover:text-[#213a75]">Home</a>
+        <a href="experiences.html" class="hover:text-[#213a75]">Experiences</a>
+        <a href="courses.html" class="hover:text-[#213a75]">Lessons</a>
+        <a href="about.html" class="hover:text-[#213a75]">About</a>
+        <a href="contact.html" class="hover:text-[#213a75]">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero -->
+  <section class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
+    <div class="relative rounded-2xl overflow-hidden">
+      <img 
+        src="hero.png" 
+        alt="Aircraft in flight over the Isle of Wight coastline"
+        width="1200" height="600"
+        class="w-full h-[480px] sm:h-[580px] object-cover"
+      >
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-end text-center text-white pb-12 px-6">
+        <h1 class="text-4xl sm:text-6xl font-bold tracking-tight leading-tight drop-shadow-md">Fly the Isle of Wight</h1>
+        <p class="mt-4 text-lg sm:text-xl text-white/90 max-w-xl drop-shadow">Flight training and flying experiences from Sandown Airport.</p>
+        <a href="#experiences" class="mt-6 inline-block bg-white text-[#213a75] px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-gray-100 transition">
+          Go Flying
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiences -->
+  <section id="experiences" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold text-center mb-1 text-[#213a75]">Experiences</h2>
+    <p class="text-sm text-gray-500 text-center mb-10">In our modern Icarus C42 aircraft — fully enclosed cockpit for comfort year round.</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition bg-white">
+        <img src="images/c42.jpg" alt="30 minute trial flight over the Isle of Wight" loading="lazy" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold">30 mins Trial flight</h3>
+          <p class="text-sm text-gray-500 mt-2">A perfect first taste of the sky. Take the controls and feel what real flying is like over the Island.</p>
+          <p class="text-3xl font-semibold mt-4 text-[#213a75]">£80</p>
+          <a href="contact.html" class="mt-6 inline-block bg-[#213a75] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1a2e5c]">Book now</a>
+        </div>
+      </div>
+
+      <div class="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition bg-white">
+        <img src="images/needles.PNG" alt="Flight to the Needles on the Isle of Wight" loading="lazy" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold">The Needles</h3>
+          <p class="text-sm text-gray-500 mt-2">Around 45 minutes of pure enjoyment. Fly the coastline, take the controls yourself, and see the iconic Needles up close.</p>
+          <p class="text-3xl font-semibold mt-4 text-[#213a75]">£99</p>
+          <a href="contact.html" class="mt-6 inline-block bg-[#213a75] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1a2e5c]">Book now</a>
+        </div>
+      </div>
+
+      <div class="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition bg-white">
+        <img src="hero.png" alt="Round the Island flight of the Isle of Wight" loading="lazy" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold">Round the Island</h3>
+          <p class="text-sm text-gray-500 mt-2">See it all — from the Needles to Sandown Bay. A full circuit of the Isle of Wight with unforgettable coastal views.</p>
+          <p class="text-3xl font-semibold mt-4 text-[#213a75]">£150</p>
+          <a href="contact.html" class="mt-6 inline-block bg-[#213a75] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1a2e5c]">Book now</a>
+        </div>
+      </div>
+
+      <div class="border-2 border-[#213a75] rounded-2xl overflow-hidden shadow-sm bg-white">
+        <img src="hero.png" alt="Formation flight for two over the Isle of Wight" loading="lazy" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <p class="text-xs font-medium tracking-wide text-[#213a75] uppercase">Most popular</p>
+          <h3 class="text-xl font-semibold mt-1">Formation Flight for 2</h3>
+          <p class="text-sm text-gray-500 mt-2">Fly side by side with a friend or family member. Two aircraft, lasting memories, and the Island beneath you.</p>
+          <p class="text-3xl font-semibold mt-4 text-[#213a75]">£350</p>
+          <a href="contact.html" class="mt-6 inline-block bg-[#213a75] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1a2e5c]">Book now</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-semibold text-center mb-1 pt-16 text-[#213a75]">Something special...</h2>
+    <p class="text-sm text-gray-500 text-center mb-10">In our vintage-style biplane for the thrill of open cockpit flying. Summer season only.</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="border-2 border-sky-600 rounded-2xl overflow-hidden bg-white">
+        <img src="hero.png" alt="Biplane flight past St Catherine’s Lighthouse" loading="lazy" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <p class="text-xs font-medium tracking-wide text-sky-600 uppercase">New</p>
+          <h3 class="text-xl font-semibold mt-1">The Lighthouse</h3>
+          <p class="text-sm text-gray-500 mt-2">Exhilarating open-cockpit flying past St Catherine’s Point. Wind in your face, real flying the way it used to be.</p>
+          <p class="text-3xl font-semibold mt-4 text-[#213a75]">£250</p>
+          <a href="contact.html" class="mt-6 inline-block bg-[#213a75] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1a2e5c]">Book now</a>
+        </div>
+      </div>
+
+      <div class="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition bg-white">
+        <img src="hero.png" alt="Biplane flight to the Needles" loading="lazy" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold">The Needles</h3>
+          <p class="text-sm text-gray-500 mt-2">Thrilling vintage biplane flight to the iconic white cliffs. Pure excitement over one of the Island’s most famous landmarks.</p>
+          <p class="text-3xl font-semibold mt-4 text-[#213a75]">£495</p>
+          <a href="contact.html" class="mt-6 inline-block bg-[#213a75] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1a2e5c]">Book now</a>
+        </div>
+      </div>
+
+      <div class="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition bg-white">
+        <img src="hero.png" alt="Biplane formation flight" loading="lazy" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold">Biplane Formation Flight</h3>
+          <p class="text-sm text-gray-500 mt-2">A friend or family member flies alongside in a C42 while you enjoy the Stampe — perfect for photos and shared memories.</p>
+          <p class="text-3xl font-semibold mt-4 text-[#213a75]">£595</p>
+          <a href="contact.html" class="mt-6 inline-block bg-[#213a75] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1a2e5c]">Book now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="bg-[#f8f9fc] py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold text-center mb-12 text-[#213a75]">What people say</h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-sm text-gray-600 italic mb-5">“An absolutely fantastic experience from start to finish. Aidan was knowledgeable and made the flight around the island unforgettable.”</p>
+          <div class="flex items-center gap-3">
+            <img src="john.png" alt="Reviewer" width="40" height="40" loading="lazy" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="text-sm font-semibold">Luna John</p>
+              <p class="text-xs text-gray-500">Tripadvisor</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-sm text-gray-600 italic mb-5">“Brilliant formation flight for a birthday. Excellent value and the views of the Needles were stunning.”</p>
+          <div class="flex items-center gap-3">
+            <img src="alex.png" alt="Reviewer" width="40" height="40" loading="lazy" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="text-sm font-semibold">Alex R</p>
+              <p class="text-xs text-gray-500">Tripadvisor</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-sm text-gray-600 italic mb-5">“Friendly instructors, modern aircraft and the chance to take the controls. Highly recommended.”</p>
+          <div class="flex items-center gap-3">
+            <img src="sam.png" alt="Reviewer" width="40" height="40" loading="lazy" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="text-sm font-semibold">Sam T</p>
+              <p class="text-xs text-gray-500">Tripadvisor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="max-w-3xl mx-auto px-6 py-20 text-gray-700 leading-relaxed">
+    <h2 class="text-2xl font-semibold text-[#213a75] mb-6">Flying lessons and trial flights on the Isle of Wight</h2>
+    <p class="mb-5">Isle of Flight is a flying school based at Sandown Airport on the Isle of Wight. We offer flying lessons and trial flights for complete beginners as well as those who already hold a licence. Whether you want a one-off experience or to start training toward a National Private Pilot’s Licence, we keep things straightforward and enjoyable.</p>
+    <p class="mb-5">Our fleet ranges from modern enclosed Ikarus C42 microlights to a vintage Stampe biplane. The C42s are stable, well-equipped two-seat aircraft that make an excellent introduction to flying, while the Stampe offers a more traditional open-cockpit experience. All flights take place over the Isle of Wight coastline, with views of the Needles, Sandown Bay and the surrounding Solent.</p>
+    <p class="mb-5">Trial lessons are available in 30-minute, 60-minute and 90-minute options and make popular gift ideas on the Isle of Wight. You can book online, including at short notice when weather and availability allow. Many visitors choose a flying lesson as one of the more memorable things to do on the Isle of Wight, and aeroplane gift vouchers are a regular request for birthdays and special occasions.</p>
+    <p>We operate from Sandown Airport and focus on clear instruction, good aircraft and a relaxed atmosphere. If you’re looking for a flying school on the Isle of Wight, a trial flight, or simply want to see the island from the air, we can help.</p>
+  </section>
+
+  <!-- Where we are -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold text-center mb-8 text-[#213a75]">Where we are</h2>
+    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+      Isle of Flight is based at Sandown Airport on the Isle of Wight. Easy to reach and right by the coast.
+    </p>
+    <div class="rounded-2xl overflow-hidden border border-gray-200">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.5!2d-1.182!3d50.653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48748a3cc9ab1871%3A0x4cd97861713030c0!2sSandown%20Airport!5e0!3m2!1sen!2suk!4v1700000000000"
+        width="100%" 
+        height="420" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map showing Sandown Airport on the Isle of Wight">
+      </iframe>
+    </div>
+    <p class="text-center mt-6">
+      <a href="https://www.google.com/maps?q=Sandown+Airport,+Isle+of+Wight" 
+         target="_blank" 
+         rel="noopener" 
+         class="text-sm text-[#213a75] hover:underline">
+        Open in Google Maps
+      </a>
+    </p>
+  </section>
+
+  <!-- Sitemap -->
+  <section class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-100">
+    <h2 class="text-2xl font-semibold text-center mb-8 text-[#213a75]">Explore</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm text-gray-600">
+      <div>
+        <p class="font-semibold text-gray-900 mb-2">Experiences</p>
+        <ul class="space-y-1">
+          <li><a href="experiences.html" class="hover:text-[#213a75]">Trial flights</a></li>
+          <li><a href="experiences.html" class="hover:text-[#213a75]">Needles & Island</a></li>
+          <li><a href="experiences.html" class="hover:text-[#213a75]">Biplane flights</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-900 mb-2">Lessons</p>
+        <ul class="space-y-1">
+          <li><a href="courses.html" class="hover:text-[#213a75]">NPPL training</a></li>
+          <li><a href="courses.html" class="hover:text-[#213a75]">Advanced flying</a></li>
+          <li><a href="courses.html" class="hover:text-[#213a75]">Tailwheel & formation</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-900 mb-2">Resources</p>
+        <ul class="space-y-1">
+          <li><a href="about.html" class="hover:text-[#213a75]">Student area</a></li>
+          <li><a href="about.html" class="hover:text-[#213a75]">Met & Nav links</a></li>
+          <li><a href="about.html" class="hover:text-[#213a75]">Visitor guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-900 mb-2">Visit</p>
+        <ul class="space-y-1">
+          <li><a href="contact.html" class="hover:text-[#213a75]">Contact & booking</a></li>
+          <li><a href="about.html" class="hover:text-[#213a75]">Sandown Airport</a></li>
+          <li><a href="about.html" class="hover:text-[#213a75]">Things to do on the Island</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-100 py-10 text-center text-sm text-gray-500">
+    © Isle of Flight
+  </footer>
+
+</body>
+</html>
